@@ -21,7 +21,7 @@ function renderComponent(ComponentClass, props = {}, state = {}) {
     <Provider store={createStore(reducers, state)}>
       <ComponentClass {...props} />
     </Provider>
-  );
+  );  
 
   return $(ReactDOM.findDOMNode(componentInstance));
 }
